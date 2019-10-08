@@ -1,11 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import "../css/styles.css";
 
-const title = 'My Minimal React Webpack Babel Setup';
-
-ReactDOM.render(
-  <div>{title}</div>,
-  document.getElementById('app')
-);
+const App = () => {
+  return <h1 id="test">My Minimal React Webpack Babel Setup test</h1>;
+};
+ReactDOM.render(<App />, document.getElementById("chat-app-module"));
 
 module.hot.accept();
